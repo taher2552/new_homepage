@@ -124,7 +124,7 @@
 }
 .nh_banner_wrapper{
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -197,3 +197,49 @@ font-weight: 700;
 }
 
 /* count section ends */
+
+/* monetize section  */
+.nh_monetize{
+    padding: 1.5rem 2.5rem;
+    
+}
+
+.nh_monetize_box, .nh_register_box, .nh_training_box{
+border-radius: 0.625rem;
+background: #D4BAFF;
+width:28rem;
+height:24rem;
+justify-content: flex-start;
+flex-direction: column;
+padding: 1rem;
+}
+
+.nh_register_box{
+    background-color: #FEE4E8;
+}
+
+.nh_monetize_box{
+    background-color: #FFECA5;
+}
+
+.step_one{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.register_step{
+    font-size: 2rem;
+    color:#B5001C;
+    font-weight: 700;
+}
+
+.nh_monetize_img img{
+    height: 144px;
+    width: 144px;
+}
+
+.step_info{
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+/* monetize section ends */
