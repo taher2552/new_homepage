@@ -23,7 +23,7 @@
 /* search section  */
 .nh_search_wrapper {
   background: #fe5c4d;
-  padding:1.5rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   gap: 3rem;
 }
 
@@ -89,157 +89,265 @@
 /* search section ends */
 
 /* header 2 starts  */
-.nh_options_wrapper{
-    padding:1.5rem 2.5rem;
+.nh_options_wrapper {
+  padding: 1.5rem 2.5rem;
 }
-.nh_options_wrapper ul{
-    justify-content: end;
-    gap:4rem;
-}
-
-.nh_options{
-    justify-content: center;
-    gap:0.5rem;
+.nh_options_wrapper ul {
+  justify-content: end;
+  gap: 4rem;
 }
 
-.nh_options span{
-    font-size: 1.5rem;
+.nh_options {
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.nh_options img{
-    width: 0.9rem;
-    height: 0.9em;
+.nh_options span {
+  font-size: 1.5rem;
 }
 
+.nh_options img {
+  width: 0.9rem;
+  height: 0.9em;
+}
 
-.nh_options_wrapper ul li{
-    list-style: none;
-    cursor: pointer;
+.nh_options_wrapper ul li {
+  list-style: none;
+  cursor: pointer;
 }
 /* header 2 ends */
 
 /* banner section  */
-.nh_banner_container{
-    background: linear-gradient(180deg, #F6E5B8 -88.71%, rgba(255, 255, 255, 0.00) 100%);
+.nh_banner_container {
+  background: linear-gradient(
+    180deg,
+    #f6e5b8 -88.71%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-.nh_banner_wrapper{
-    width: 100%;
-    height: 20rem;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nh_register_heading{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-}
-
-.nh_top_text h1, .nh_top_text span{
-font-size: 2rem;
-font-weight: 700;
+.nh_banner_wrapper {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nh_top_text{
-    margin-bottom: 3rem;
+.nh_register_heading {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
-.nh_top_btn button{
-    background-color: #FF1500;
-    color:#fff;
-    font-weight: 900;
-    font-size: 1.3rem;
-    padding: 10px 15px;
-    border-radius: 0.3125rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+.nh_top_text h1,
+.nh_top_text span {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.map_img img{
-    width: 30rem;
-    height:100%;
+.nh_top_text {
+  margin-bottom: 3rem;
+}
+
+.nh_top_btn button {
+  background-color: #ff1500;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border-radius: 0.3125rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.map_img img {
+  width: 30rem;
+  height: 100%;
 }
 /* banner section ends */
 
 /* count section  */
-.nh_count_wrapper{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:1rem;
-    background: #FFF8F7;
-    padding: 1.5rem 2.5rem;
+.nh_count_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: #fff8f7;
+  padding: 1.5rem 2.5rem;
 }
 
-.nh_count{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.nh_count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.nh_count img{
-    width: 3.5rem;
-    height: 3.5rem;
+.nh_count img {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
-.nh_count_text{
-    font-size: 2rem;
+.nh_count_text {
+  font-size: 2rem;
 }
 
-.nh_value, .nh_plus{
-    font-weight: 700;
+.nh_value,
+.nh_plus {
+  font-weight: 700;
 }
 
-.nh_detail{
-    color: #FF1500;
+.nh_detail {
+  color: #ff1500;
 }
 
 /* count section ends */
 
 /* monetize section  */
-.nh_monetize{
-    padding: 1.5rem 2.5rem;
-    
+.nh_monetize {
+  padding: 1.5rem 2.5rem;
 }
 
-.nh_monetize_box, .nh_register_box, .nh_training_box{
-border-radius: 0.625rem;
-background: #D4BAFF;
-width:28rem;
-height:24rem;
-justify-content: flex-start;
-flex-direction: column;
-padding: 1rem;
+.nh_monetize_box,
+.nh_register_box,
+.nh_training_box {
+  border-radius: 0.625rem;
+  background: #d4baff;
+  width: 28rem;
+  height: 24rem;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.nh_register_box{
-    background-color: #FEE4E8;
+.nh_register_box {
+  background-color: #fee4e8;
 }
 
-.nh_monetize_box{
-    background-color: #FFECA5;
+.nh_monetize_box {
+  background-color: #ffeca5;
 }
 
-.step_one{
-    font-weight: 600;
-    font-size: 1.5rem;
+.step_one {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-.register_step{
-    font-size: 2rem;
-    color:#B5001C;
-    font-weight: 700;
+.register_step {
+  font-size: 2rem;
+  color: #b5001c;
+  font-weight: 700;
 }
 
-.nh_monetize_img img{
-    height: 144px;
-    width: 144px;
+.nh_monetize_img img {
+  height: 144px;
+  width: 144px;
 }
 
-.step_info{
-    font-weight: 500;
-    font-size: 0.875rem;
+.step_info {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.nh_play_wrap {
+  padding: 1.5rem 2.5rem;
+  overflow: auto;
 }
 /* monetize section ends */
+
+/* play section  */
+.nh_sport_wrapper, .nh_city {
+  margin-top: 2rem;
+}
+.nh_play_wrap h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nh_sport_box {
+  width: 15rem;
+  height: 17rem;
+  border-radius: 1.875rem;
+  background: linear-gradient(180deg, #fde7c7 0.06%, #fed2b7 99.94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.nh_sport_box img {
+  width: 13rem;
+  height: 15rem;
+}
+
+.nh_sport_name {
+  position: absolute;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3125rem;
+  bottom: -18px;
+  border: 2px solid #fed2b7;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nh_sport_name span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.bg_2 {
+    background: linear-gradient(180deg, #d6d2ff 0.06%, #d7bbff 99.94%);
+  }
+  
+  .bd_2{
+      border: 2px solid #d7bbff;
+  }
+
+.bg_3 {
+    background: linear-gradient(180deg, #FDE1A2 0.06%, #FEE198 99.94%);
+  }
+  
+  .bd_3{
+      border: 2px solid #FEE198;
+  }
+.bg_4 {
+    background: linear-gradient(180deg, #D8FFE7 0.06%, #B8FFBB 99.94%);
+  }
+  
+  .bd_4{
+      border: 2px solid #B8FFBB;
+  }
+
+/* play section ends */
+
+/* city section  */
+
+.nh_city {
+    position: relative;
+}
+
+.nh_city img {
+    height: 10rem;
+    width: 10rem;
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.nh_cityname {
+    position: absolute;
+    bottom:10px;
+    left: 50%; /* Places the left edge of the name at the center */
+    transform: translateX(-50%); /* Centers the name horizontally */
+    text-align: center; /* Centers the text within the container */
+}
+
+.nh_cityname span {
+  color:#fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* city section ends */
