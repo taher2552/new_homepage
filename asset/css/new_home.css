@@ -133,6 +133,7 @@
 
 .nh_register_heading{
     margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .nh_top_text h1, .nh_top_text span{
@@ -158,6 +159,41 @@ font-weight: 700;
 
 .map_img img{
     width: 30rem;
-    height: 30rem;
+    height:100%;
 }
 /* banner section ends */
+
+/* count section  */
+.nh_count_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+    background: #FFF8F7;
+    padding: 1.5rem 2.5rem;
+}
+
+.nh_count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nh_count img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nh_count_text{
+    font-size: 2rem;
+}
+
+.nh_value, .nh_plus{
+    font-weight: 700;
+}
+
+.nh_detail{
+    color: #FF1500;
+}
+
+/* count section ends */
