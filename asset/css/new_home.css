@@ -404,10 +404,21 @@
   right: 2%;
 }
 
-.ad_text_one, .ad_text_two{
+.ad_text_2{
+  position: absolute;
+  top:25%;
+  left:2%;
+}
+
+
+.ad_text_one, .ad_text_two, .ad_text_new{
   color: #A73E00;
-font-size: 1.8rem;
+font-size: 1.7rem;
 font-weight: 600;
+}
+
+.ad_text_new{
+  color:#0043A1;
 }
 
 .ad_text_two{
@@ -418,6 +429,12 @@ font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.ad_text_flex_2{
+  display: flex;
+  justify-content: start;
+  align-items: start;
   flex-direction: column;
 }
 
@@ -445,6 +462,14 @@ margin-bottom: 0.5rem;
   color: #A73E00;
 font-size: 0.75rem;
 font-weight: 600;
+}
+
+.ad_btn_2 button{
+  background:#0049B0; 
+}
+
+.ad_btn_2 span{
+  color:#0043A1
 }
 
 
