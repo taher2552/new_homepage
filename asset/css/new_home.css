@@ -389,8 +389,61 @@
 }
 
 .ad_img img{
-  height: 20rem;
+  height: 18rem;
   width: 100%;
+}
+
+.ad_img{
+  position: relative;
+}
+
+.ad_text{
+  position: absolute;
+  top:25%;
+  right: 2%;
+}
+
+.ad_text_one, .ad_text_two{
+  color: #A73E00;
+font-size: 1.8rem;
+font-weight: 600;
+}
+
+.ad_text_two{
+  font-weight: 700;
+}
+
+.ad_text_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ad_btn{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ad_btn button{
+border-radius: 0.4rem;
+background: #9A3900;
+color:#fff;
+padding: 0.4rem 1rem;
+cursor: pointer;
+border: none;
+font-weight: 600;
+font-size: 1.2rem;
+margin-bottom: 0.5rem;
+}
+
+.ad_btn span{
+  color: #A73E00;
+font-size: 0.75rem;
+font-weight: 600;
 }
 
 
