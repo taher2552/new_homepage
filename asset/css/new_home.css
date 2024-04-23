@@ -23,7 +23,7 @@
 /* search section  */
 .nh_search_wrapper {
   background: #fe5c4d;
-  padding: 1.5rem 2.5rem;
+  padding: 1.44rem 2.5rem;
   gap: 3rem;
 }
 
@@ -90,7 +90,9 @@
 
 /* header 2 starts  */
 .nh_options_wrapper {
-  padding: 1.5rem 2.5rem;
+ padding-top: 1.44rem;
+ padding-left: 2.5rem;
+ padding-right: 2.5rem;
 }
 .nh_options_wrapper ul {
   justify-content: end;
@@ -103,7 +105,7 @@
 }
 
 .nh_options span {
-  font-size: 1.5rem;
+  font-size: 1.44rem;
 }
 
 .nh_options img {
@@ -127,7 +129,6 @@
 }
 .nh_banner_wrapper {
   width: 100%;
-  height: 20rem;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -135,13 +136,12 @@
 }
 
 .nh_register_heading {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left:2.5rem;
 }
 
 .nh_top_text h1,
 .nh_top_text span {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -161,9 +161,13 @@
   cursor: pointer;
 }
 
+.map_img{
+  z-index: -1;
+}
+
 .map_img img {
-  width: 30rem;
-  height: 100%;
+  width:40rem;
+  height: 25rem;
 }
 /* banner section ends */
 
@@ -173,7 +177,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   background: #fff8f7;
-  padding: 1.5rem 2.5rem;
+  padding: 1.44rem 2.5rem;
+  margin-top: -0.65rem;
 }
 
 .nh_count {
@@ -190,6 +195,10 @@
 
 .nh_count_text {
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0rem;
 }
 
 .nh_value,
@@ -201,11 +210,23 @@
   color: #ff1500;
 }
 
+.rolling-number {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.digit {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
 /* count section ends */
 
 /* monetize section  */
 .nh_monetize {
-  padding: 1.5rem 2.5rem;
+  padding: 1.44rem 2.5rem;
 }
 
 .nh_monetize_box,
@@ -230,7 +251,7 @@
 
 .step_one {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.44rem;
 }
 
 .register_step {
@@ -250,7 +271,7 @@
 }
 
 .nh_play_wrap {
-  padding: 1.5rem 2.5rem;
+  padding: 1.44rem 2.5rem;
   overflow: auto;
 }
 /* monetize section ends */
