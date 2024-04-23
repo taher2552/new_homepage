@@ -241,11 +241,11 @@
 .nh_training_box {
   border-radius: 0.625rem;
   background: #d4baff;
-  width: 28rem;
-  height: 24rem;
   justify-content: flex-start;
   flex-direction: column;
   padding: 1rem;
+  width: 33%;
+  height:23rem;
 }
 
 .nh_register_box {
@@ -273,13 +273,12 @@
 }
 
 .step_info {
-  font-weight: 500;
-  font-size: 0.875rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .nh_play_wrap {
   padding: 1rem 2.5rem;
-  overflow: auto;
 }
 /* monetize section ends */
 
@@ -293,9 +292,9 @@
 }
 
 .nh_sport_box {
-  width: 15rem;
+  width: 22rem;
   height: 17rem;
-  border-radius: 1.875rem;
+  border-radius: 1.5rem;
   background: linear-gradient(180deg, #fde7c7 0.06%, #fed2b7 99.94%);
   display: flex;
   justify-content: center;
@@ -313,16 +312,20 @@
 .nh_sport_name {
   position: absolute;
   background-color: #fff;
-  padding: 0.5rem 1rem;
+  padding:0.3rem 0.5rem;
   border-radius: 0.3125rem;
   bottom: -18px;
   border: 2px solid #fed2b7;
   left: 50%;
   transform: translateX(-50%);
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nh_sport_name span {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
 }
 
