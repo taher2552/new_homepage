@@ -30,5 +30,5 @@ $(document).ready(function(){
   rollNumbers(12520, 900, "players");
   rollNumbers(14854, 900, "academies");
   rollNumbers(14750, 900, "coaches");
-  rollNumbers(15485, 900, "teams");
+  rollNumbers(11485, 900, "teams");
 });
