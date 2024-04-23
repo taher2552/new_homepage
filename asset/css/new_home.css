@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 
 .new_fonts {
   color: #222;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Noto Sans", Arial, sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -23,7 +24,7 @@
 /* search section  */
 .nh_search_wrapper {
   background: #fe5c4d;
-  padding: 1.44rem 2.5rem;
+  padding: 1rem 2.5rem;
   gap: 3rem;
 }
 
@@ -90,7 +91,7 @@
 
 /* header 2 starts  */
 .nh_options_wrapper {
- padding-top: 1.44rem;
+ padding-top: 1rem;
  padding-left: 2.5rem;
  padding-right: 2.5rem;
 }
@@ -166,7 +167,7 @@
 }
 
 .map_img img {
-  width:40rem;
+  width:42rem;
   height: 25rem;
 }
 /* banner section ends */
@@ -177,7 +178,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   background: #fff8f7;
-  padding: 1.44rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   margin-top: -0.65rem;
 }
 
@@ -189,16 +190,16 @@
 }
 
 .nh_count img {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .nh_count_text {
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:0rem;
+  margin-top: -0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
 }
 
 .nh_value,
@@ -208,25 +209,31 @@
 
 .nh_detail {
   color: #ff1500;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em; /* Adjust value as needed */
 }
 
 .rolling-number {
   font-size: 24px;
   font-weight: bold;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .digit {
   display: inline-block;
   transition: transform 0.5s ease-in-out;
+  font-size: 2rem;
 }
 
 /* count section ends */
 
 /* monetize section  */
 .nh_monetize {
-  padding: 1.44rem 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 .nh_monetize_box,
@@ -271,7 +278,7 @@
 }
 
 .nh_play_wrap {
-  padding: 1.44rem 2.5rem;
+  padding: 1rem 2.5rem;
   overflow: auto;
 }
 /* monetize section ends */
