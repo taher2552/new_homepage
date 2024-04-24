@@ -31,4 +31,34 @@ $(document).ready(function(){
   rollNumbers(14854, 900, "academies");
   rollNumbers(14750, 900, "coaches");
   rollNumbers(11485, 900, "teams");
+
+
+  const registerButton = $('#openRegester');
+  const registerPopup = $('.register_popup');
+
+  function showPopup() {
+    registerPopup.css('display', 'block');
+    registerPopup.addClass('slide-in');
+  }
+
+  function hidePopup() {
+    registerPopup.removeClass('slide-in');
+    registerPopup.addClass('slide-out');
+    setTimeout(function() {
+      registerPopup.css('display', 'none');
+      registerPopup.removeClass('slide-out');
+    }, 300);
+  }
+
+  if (registerButton.length > 0) {
+    registerButton.on('click', showPopup);
+  }
+
+
+
+  registerPopup.on('click', function(e) {
+    if (e.target === registerPopup[0]) {
+      hidePopup();
+    }
+  });
 });
