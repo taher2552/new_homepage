@@ -32,7 +32,7 @@ $(document).ready(function(){
   rollNumbers(14750, 900, "coaches");
   rollNumbers(11485, 900, "teams");
 
-
+//  register 
   const registerButton = $('#openRegester');
   const registerPopup = $('.register_popup');
 
@@ -61,4 +61,23 @@ $(document).ready(function(){
       hidePopup();
     }
   });
+
+  // register 2 
+  $("#openRegisterOption").click(function(event) {
+    event.stopPropagation(); // Prevents the click event from propagating to the document
+    $(".register_popup_new").css("display", "block");
+});
+
+// Handle document click to close the popup if clicked outside
+$(document).click(function(event) {
+    var $target = $(event.target);
+    if (!$target.closest('.reg_box, #openRegisterOption').length) {
+        $(".register_popup_new").css("display", "none");
+    }
+});
+
+// Prevent closing when clicking inside the popup
+$(".reg_box").click(function(event) {
+    event.stopPropagation();
+});
 });

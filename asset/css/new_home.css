@@ -832,6 +832,19 @@ box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   z-index: 1001;
   transition: left 0.6s ease-in-out;
 }
+.register_popup_new{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1001;
+  transition: left 0.6s ease-in-out;
+}
 
 .register_content{
   margin: 2rem 12rem;
@@ -938,6 +951,39 @@ outline: none;
 
 .register_popup.slide-out {
   animation: slideFar 0.6s forwards;
+}
+
+.register_option{
+  position: fixed;
+  top:3%;
+  right:2%;
+}
+
+.reg_box{
+  padding:1rem 1rem;
+  width: 14rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.reg_text{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.reg_box:hover{
+  background-color: #D70000;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  .reg_text{
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 @media only screen and (max-width: 550px){
