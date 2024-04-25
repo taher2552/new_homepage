@@ -137,4 +137,40 @@ $(document).on('click', function(event) {
       }
   }
 });
+
+$(".city_text").click(function() {
+  var $cityGrid = $(".city_grid");
+  var $cityText = $(this);
+
+  $cityGrid.toggle(); // This toggles the visibility of the city grid
+  if ($cityText.text() === "View All Cities") {
+      $cityText.text("Hide All Cities"); // Change text to "Hide All Cities"
+  } else {
+      $cityText.text("View All Cities"); // Change text back to "View All Cities"
+  }
+});
+
+
+$('#city_click').click(function() {
+  $('.city_popup').slideToggle('fast'); // Toggle visibility with sliding effect
+});
+
+// Hide popup when clicking outside of sports_box within sports_popup
+$(document).on('click', function(event) {
+  // Check if the clicked area is not sports_click and not a descendant of sports_box
+  if (!$(event.target).closest('#city_click, .city_box').length) {
+      // If the popup is visible, slide it up to hide
+      if ($('.city_popup').is(':visible')) {
+          $('.city_popup').slideUp('fast');
+          $('.city_text').show().text('Hide All Cities');
+          $('.nh_city_input').val("");
+          $(".city_grid").hide();
+      }
+  }
+});
+
+
+
+
+
 });
