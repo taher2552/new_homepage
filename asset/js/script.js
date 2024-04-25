@@ -120,7 +120,7 @@ $('.nh_sport_input').on('keyup', function() {
 });
 
 $('#sports_click').click(function() {
-  $('.sports_popup').slideToggle('slow'); // Toggle visibility with sliding effect
+  $('.sports_popup').slideToggle('fast'); // Toggle visibility with sliding effect
 });
 
 // Hide popup when clicking outside of sports_box within sports_popup
@@ -129,7 +129,11 @@ $(document).on('click', function(event) {
   if (!$(event.target).closest('#sports_click, .sports_box').length) {
       // If the popup is visible, slide it up to hide
       if ($('.sports_popup').is(':visible')) {
-          $('.sports_popup').slideUp('slow');
+          $('.sports_popup').slideUp('fast');
+          $('.sport_text_2').show().text('Hide All Sports');
+          $('.nh_sport_input').val("");
+          $('.sports_img').show(); 
+          $('.sports_img:nth-child(n+19)').hide();
       }
   }
 });
