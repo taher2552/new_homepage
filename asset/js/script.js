@@ -162,11 +162,30 @@ $(document).on('click', function(event) {
       // If the popup is visible, slide it up to hide
       if ($('.city_popup').is(':visible')) {
           $('.city_popup').slideUp('fast');
-          $('.city_text').show().text('Hide All Cities');
+          $('.city_text').show().text('View All Cities');
           $('.nh_city_input').val("");
+          $('.city_grid li').each(function() { // Iterate over each list item in the city grid
+                $(this).show(); 
+        });
           $(".city_grid").hide();
+
       }
   }
+});
+
+$('#citySearchInput').keyup(function() {
+  $(".city_grid").show();
+  var searchValue = $(this).val().toLowerCase(); // Get the search input value and convert it to lower case
+
+  $('.city_grid li').each(function() { // Iterate over each list item in the city grid
+      var cityText = $(this).text().toLowerCase(); // Get the text of the current list item and convert to lower case
+      if (cityText.includes(searchValue)) { // Check if the list item's text includes the search value
+          $(this).show(); // If it does, show the list item
+      } else {
+          $(this).hide();
+          $('.city_text').show().text('Hide All Cities');
+      }
+  });
 });
 
 
