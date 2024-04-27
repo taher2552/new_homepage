@@ -26,7 +26,10 @@
 .nh_search_wrapper {
   background: #fe5c4d;
   padding: 1rem 2.5rem;
-  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .nh_search_wrapper .nh_logo {
@@ -123,18 +126,33 @@
 
 /* banner section  */
 .nh_banner_container {
+  width: 100%;
+  height:25rem;
   background: linear-gradient(
     180deg,
     #f6e5b8 -88.71%,
     rgba(255, 255, 255, 0) 100%
   );
+  position: relative;
 }
+
+.map_rough{
+  position: absolute;
+  right: 0;
+  top:0;
+  z-index: -1;
+}
+
+
 .nh_banner_wrapper {
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  height: 100%;
+  background-position: right center; 
+
 }
 
 .nh_register_heading {
@@ -216,7 +234,7 @@
 }
 
 .rolling-number {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -968,11 +986,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
-  #openRegester {
-    display: none;
-  }
-}
+
 
 @media screen and (max-width: 1050px) {
   .acad_btn button {
@@ -1054,40 +1068,14 @@
   }
 }
 
-@media only screen and (max-width: 430px) {
-  .register_img img {
-    width: 17rem;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .register_img img {
-    width: 16rem;
-  }
-}
-@media only screen and (max-width: 355px) {
-  .register_img img {
-    width: 14rem;
-  }
-}
-@media only screen and (max-width: 310px) {
-  .register_img img {
-    width: 10rem;
-    height: 12rem;
-  }
-
-  .acad_btn button {
-    font-size: 0.75rem;
-    padding: 0.5rem;
-  }
-}
 
 .sports_box {
   width: 55rem;
   background-color: #fff;
-  border-top-left-radius: 0.625rem;
-  border-bottom-left-radius: 0.625rem;
+  border-radius: 0.625rem;
   position: absolute;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: 20%;
   padding: 1.5rem;
 }
@@ -1150,9 +1138,10 @@
   border-radius: 0.1rem;
   position: absolute;
   left: 50%;
-  top: 7%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%,-50%);
   padding: 1.5rem;
+  border-radius: 0.625rem;
 }
 
 .current_location {
@@ -1189,4 +1178,294 @@
 .city_grid ul li {
   width: 5rem;
   font-weight: 500;
+}
+
+.white_search{
+  display: none;
+}
+
+.nh_register img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.step_register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width:1200px) {
+  .nh_detail {
+    font-size: 1.5rem;
+  }
+  
+  .rolling-number {
+    font-size: 1rem;
+  }
+  
+  .digit {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width:1100px) {
+  .nh_monetize_box,
+  .nh_register_box,
+  .nh_training_box {
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 942px) {
+  .nh_search_wrapper .nh_logo {
+    width: 80px;
+    height: 40px;
+  }
+
+  .nh_detect span {
+    font-size:0.875rem;
+  }
+  .nh_detect img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .nh_count_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: start;
+    gap:0.5rem;
+  }
+  .nh_count {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 930px) {
+.nh_monetize{
+ display:block;
+ width:100%;
+}
+.nh_monetize_box,
+.nh_register_box,
+.nh_training_box {
+  width: 90%;
+}
+
+.step_register{
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+}
+@media only screen and (max-width: 950px) {
+.city_box, .sports_box{
+  width:45rem ;
+}
+
+.city_icon, .sports_icon {
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+
+.city_grid ul {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+}
+@media only screen and (max-width: 800px) {
+  .city_box, .sports_box{
+    width:35rem ;
+  }
+
+  .city_icon, .sports_icon {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  
+  .city_grid ul {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .nh_detect{
+    display: none;
+  }
+
+  .nh_options span {
+    font-size: 1rem;
+  }
+  
+  .nh_options img {
+    width: 0.6rem;
+    height: 0.6em;
+  }
+ 
+  
+}
+@media only screen and (max-width: 700px) {
+  .nh_search_wrapper {
+    background: #fe5c4d;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .map_rough img{
+   width:25rem;
+   height: 25rem;
+  }
+
+  .nh_search_wrapper > div:nth-child(2) {
+    order: 3;
+    width: 100%;
+    margin-top: -1.5rem;
+  }
+
+  .white_search{
+    display: block;
+  }
+
+  .search_top{
+    display: none;
+  }
+
+  .nh_options_wrapper{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width:684px) {
+  .nh_top_text h1,
+  .nh_top_text span {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width:630px) {
+  .nh_detail {
+    font-size: 1.2rem;
+  }
+  
+  .rolling-number {
+    font-size: 0.875rem;
+  }
+  
+  .digit {
+    font-size: 1.2rem;
+  }
+
+  .nh_count img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .nh_count_wrapper {
+    padding: 1rem;
+}
+}
+@media only screen and (max-width: 550px) {
+  .nh_search_wrapper {
+    padding: 1rem;
+  } 
+  .nh_top_text h1,
+  .nh_top_text span {
+    font-size: 1.5rem;
+  }
+
+  .nh_top_btn button {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .nh_register_heading {
+    margin-left:1rem;
+  }
+
+  .nh_banner_container {
+    height:18rem;
+  }
+
+  
+  .map_rough img{
+    width:18rem;
+    height: 18rem;
+   }
+ 
+  
+}
+@media only screen and (max-width: 450px) {
+  .nh_detail {
+    font-size:0.875rem;
+  }
+  
+  .rolling-number {
+    font-size: 0.8rem;
+  }
+  
+  .digit {
+    font-size:0.875rem;
+  }
+
+  .nh_count img {
+    width: 1.8rem;
+    height:1.8rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .register_img img {
+    width: 17rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .nh_top_text h1,
+  .nh_top_text span {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .register_img img {
+    width: 16rem;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .register_img img {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width:325px) {
+  .nh_top_text h1,
+  .nh_top_text span {
+    font-size: 1rem;
+  }
+
+  .nh_detail {
+    font-size:0.8rem;
+  }
+  
+  .rolling-number {
+    font-size: 0.75rem;
+  }
+  
+  .digit {
+    font-size:0.8rem;
+  }
+
+  .nh_count img {
+    width: 1rem;
+    height:1rem;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .register_img img {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .acad_btn button {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
 }
